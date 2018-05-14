@@ -31,7 +31,7 @@ this.$router.push({name: '/'})
   <b-collapse is-nav id="nav_collapse">
 
     <b-navbar-nav>
-      <b-nav-item href="#" v-on:submit="handleLogout()">Logout</b-nav-item>
+      <b-nav-item href="#" v-on:click="handleLogout()">Logout</b-nav-item>
       <b-nav-item href="#" disabled>Disabled</b-nav-item>
     </b-navbar-nav>
 

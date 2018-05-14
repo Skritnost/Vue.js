@@ -10,11 +10,14 @@ import loginpage from './pages/loginpage.vue'
 import homepage from './pages/homepage.vue'
 import registerpage from './pages/registerpage.vue'
 import adress from './pages/autocomplete.vue'
+import table from './pages/table.vue'
 import mapgoogle from './pages/mapGog.vue'
 import store from './store'
 import Vuelidate from 'vuelidate'
 import  AuthUser  from './pages/checking.vue'
 
+
+Vue.use(axios)
 
 Vue.use(Vuelidate)
 Vue.use(VueAxios, axios)
@@ -38,6 +41,9 @@ const routes = [
   },
   {
     path: '/adress', component: adress, name: 'auto-add'
+  },
+  {
+    path: '/table', component: table, name: 'res-table'
   }
   
 ]
@@ -48,6 +54,8 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to,from,next)=>{
+  while(sessionStorage.getItem('UserInSystem'))
+ next({path: '/home'})
  next()
   })
 
