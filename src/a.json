@@ -1,0 +1,38 @@
+{ "column1":{
+      "label": "Text",
+      "field": "text",
+      "filterOptions": {
+        "enabled": true 
+        }},
+   "column2":{
+      "label": "Link",
+      "field": "link"
+    },
+    "row1":{ 
+        "id":"1",
+        "text":"Hello",
+        "link": "www.google.ru"
+        },
+    "row2":{ 
+        "id":"2", 
+        "text":"World", 
+        "link": "www.yandex.ru"
+    },
+    "row3":{ 
+        "id":"3", 
+        "text":"How",   
+        "link": "www.github.com"
+    },
+    "row4":{ "id":"4", 
+        "text":"Are",   
+        "link": "www.youtube.com"
+    },
+    "row5":{ "id":"5", 
+        "text":"you",   
+        "link": "www.duckduckgo.com"
+    },
+    "row6":{ "id":"6", 
+        "text":"today?", 
+        "link": "www.google.ru"
+    }
+}
